@@ -1,0 +1,59 @@
+.main-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%
+    }
+    section {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .layout {
+    border-top: 1px solid rgba(75, 85, 99, 0.6);
+  }
+
+  .about-me-bg {
+    background-color: rgb(18, 18, 18);
+  }
+
+  .used-stack-bg{
+    background-color: rgb(18, 18, 18);
+  }
+
+  .project-bg{
+    background-color: rgb(18, 18, 18);
+  }
+
+  @media (min-width: 768px) {
+    .layout {
+      width: calc(100% - 80px);
+      padding: 0 40px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .layout {
+      width: calc(100% - 120px);
+      padding: 0 60px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .layout {
+      width: calc(100% - 200px);
+      padding: 0 100px;
+    }
+  }
+  
+  

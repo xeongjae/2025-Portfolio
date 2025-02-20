@@ -1,0 +1,180 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  height: 110vh;
+  margin: 0 40px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+
+  .title {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    white-space: nowrap;
+    filter: brightness(0.9);
+    width: 100%;
+  }
+
+  .title:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    background: linear-gradient(to right, #4a5568, #f8fafc);
+    filter: brightness(0.9);
+  }
+
+  .title:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    background: linear-gradient(to right, #f8fafc, #4a5568);
+    filter: brightness(0.9);
+  }
+
+  .sub-title {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    margin-top: 76px;
+    z-index: 100;
+  }
+
+  .description {
+    font-family: "NanumSquareNeo";
+    margin-top: 0.5rem;
+    line-height: 1.5;
+    color: #d1d5d8;
+    font-size: 20px;
+  }
+
+  .contact-item-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .contact-item {
+    font-family: "Montserrat", sans-serif;
+    padding: 0.7rem 1.2rem;
+    border: 1px solid #a0aec0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 9999px;
+    font-size: 18px;
+  }
+
+  .link {
+    font-family: "Montserrat", sans-serif;
+    padding: 0.6rem 1.1rem;
+    border: 1px solid #a0aec0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 9999px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .link:hover {
+    background-color: #f8fafc;
+    color: black;
+    cursor: pointer;
+  }
+
+  .left-cloud {
+    width: 9vw;
+    position: absolute;
+    top: 32%;
+    left: 0;
+    filter: blur(2px);
+    animation: bounce 3.2s infinite alternate;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .top-cloud {
+    width: 9vw;
+    position: absolute;
+    rotate: 10deg;
+    top: 22%;
+    right: 18%;
+    filter: blur(1px);
+    animation: bounce 2s infinite alternate;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .right-cloud {
+    width: 7vw;
+    position: absolute;
+    top: 42%;
+    right: 0;
+    rotate: 15deg;
+    filter: blur(3px);
+    animation: bounce 3s infinite alternate;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .bottom-cloud {
+    width: 9vw;
+    position: absolute;
+    rotate: -3deg;
+    bottom: 12%;
+    left: 55%;
+    filter: blur(3px);
+    animation: bounce 2.5s infinite alternate;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+@media (min-width: 768px) {
+  .contact {
+    .contact-item-box {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    .contact-item-box {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact {
+    .contact-item-box {
+      flex-direction: row;
+    }
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}

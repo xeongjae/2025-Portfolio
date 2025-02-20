@@ -1,0 +1,133 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1300px;
+  height: 1000px;
+  margin: 0 40px 100px 40px;
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    .img {
+      width: 360px;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    p {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      font-family: "NanumSquareNeo";
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+
+  .type-text-box {
+    display: none;
+    margin: 20px 0 20px 0;
+    height: 30px;
+  }
+
+  .type-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #f8fafc;
+    ~ .typed-cursor {
+      font-size: 28px;
+      color: #d0ddee;
+    }
+  }
+
+  .tag-box {
+    display: none;
+    gap: 14px;
+  }
+
+  .tag {
+    font-family: "NanumSquareNeoBold";
+    color: #f8fafc;
+    background-color: rgb(208, 221, 238, 0.15);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 0.35rem 0.65rem;
+    margin-top: 4px;
+  }
+
+  .point {
+    font-family: "NanumSquareNeoExtraBold";
+    color: #95a8c8;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-me {
+    .contents {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .type-text-box {
+      display: none;
+    }
+    .mobile-text {
+      display: block;
+    }
+    .tag-box {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-me {
+    .contents {
+      display: flex;
+      flex-direction: row;
+    }
+    .type-text-box {
+      display: flex;
+    }
+    .mobile-text {
+      display: none;
+    }
+    .tag-box {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-me {
+    .contents {
+      display: flex;
+      flex-direction: row;
+    }
+    .type-text-box {
+      display: flex;
+    }
+    .mobile-text {
+      display: none;
+    }
+    .tag-box {
+      display: flex;
+    }
+  }
+}
