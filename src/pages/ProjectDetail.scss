@@ -1,0 +1,257 @@
+.project-detail.light-mode {
+  .feature {
+    color: #121212;
+    border: 1px solid #333;
+  }
+  .sub-title {
+    color: #555;
+  }
+  .detail-description {
+    color: #333;
+  }
+  .link-button {
+    border: 1px solid #333;
+    background-color: #ddd;
+    color: #121212;
+  }
+  .link-button:hover {
+    background-color: #121212;
+    color: #f8fafc;
+  }
+  .stack {
+    color: #121212;
+    border: 1px solid #333;
+  }
+  .detail-bot {
+    .card {
+      background-color: #b0b0b09d;
+      h3 {
+        font-family: "NanumSquareNeoBold";
+        text-align: center;
+        font-size: 18px;
+        background-color: #888;
+        padding: 24px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.project-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  .detail-top {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    padding: 110px 20px 60px 20px;
+    border-bottom: 1px solid rgb(30, 41, 59);
+  }
+  .info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+  }
+  .feature-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+  }
+  .feature {
+    padding: 5px 10px;
+    color: #e5e7eb;
+    font-size: 12px;
+    border: 1px solid rgb(156 163 175);
+    border-radius: 20px;
+  }
+  .sub-title {
+    font-size: 32px;
+    color: #9ca3af;
+  }
+  .title {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+    font-family: "NanumSquareNeoExtraBold";
+  }
+  .period {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+  }
+  .detail-description {
+    font-size: 16px;
+    color: #9ca3af;
+    line-height: 1.6;
+  }
+  .link-button-box {
+    margin-top: 2.5rem;
+  }
+  .link-button {
+    font-size: 16px;
+    padding: 20px 30px;
+    border: 1px solid gray;
+    border-radius: 9999px;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(18, 18, 18);
+    color: #f8fafc;
+    transition: background-color 0.1s ease, color 0.1s ease;
+  }
+  .link-button:hover {
+    background-color: #f8fafc;
+    color: rgb(18, 18, 18);
+    cursor: pointer;
+  }
+
+  .img-box {
+    width: 600px;
+    overflow: hidden;
+    border-radius: 20px;
+    aspect-ratio: 6 / 4;
+  }
+  .img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .detail-mid {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    padding: 40px 20px 60px 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  .project-introduce-box {
+    width: 50%;
+  }
+  .project-introduce-contents {
+    margin-left: 40px;
+    div {
+      font-family: "NanumSquareNeoBold";
+      padding: 0 0 20px 0;
+      p {
+        font-family: "NanumSquareNeo";
+      }
+    }
+  }
+  .spot {
+    margin-right: 6px;
+  }
+  .stack-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+    margin-left: 18px;
+  }
+  .stack {
+    padding: 5px 10px;
+    color: #e5e7eb;
+    font-size: 12px;
+    border: 1px solid rgb(156 163 175);
+    border-radius: 20px;
+    font-family: "NanumSquareNeo";
+  }
+  .description {
+    margin-top: 1rem;
+    margin-left: 20px;
+    line-height: 1.6;
+  }
+  .project-explain-box {
+    width: 50%;
+  }
+  .project-explain-contents {
+    margin-left: 40px;
+    div {
+      margin-bottom: 44px;
+    }
+    h4 {
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 16px;
+      margin-left: 20px;
+    }
+  }
+  .detail-bot {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    padding: 40px 20px 100px 20px;
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2.5rem;
+      padding-top: 1rem;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(37, 37, 37, 0.616);
+      border-radius: 20px;
+      h3 {
+        font-family: "NanumSquareNeoBold";
+        text-align: center;
+        font-size: 18px;
+        background-color: #333;
+        padding: 24px;
+        border-radius: 10px;
+      }
+    }
+
+    .problem,
+    .solution,
+    .learned {
+      margin-top: 10px;
+      padding: 24px;
+      line-height: 1.6;
+    }
+    .problem-title {
+      font-size: 14px;
+      color: rgb(248, 113, 113);
+      margin-bottom: 0.5rem;
+    }
+    .solution-title {
+      font-size: 14px;
+      color: rgb(96, 165, 250);
+      margin-bottom: 0.5rem;
+    }
+    .learned-title {
+      font-size: 14px;
+      color: rgb(245, 158, 11);
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .project-detail {
+    width: calc(100% - 80px);
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-detail {
+    width: calc(100% - 120px);
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .project-detail {
+    width: calc(100% - 200px);
+    padding: 0 100px;
+  }
+}

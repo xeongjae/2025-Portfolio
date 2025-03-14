@@ -1,13 +1,15 @@
 import "./ProjectCard.scss";
-import React from "react";
+
+import useThemeStore from "../../hooks/useThemeStore";
 
 const ProjectCard = ({ Title, SubTitle, ImageSrc, Tag, onClick }) => {
+  const { isLightMode } = useThemeStore();
+
   return (
-    <div onClick={onClick} className="project-card">
+    <div onClick={onClick} className={`project-card ${isLightMode ? "light-mode" : "dark-mode"}`}>
       <div className="img-box">
         <img
           src={ImageSrc}
-          fill
           alt={Title}
           property="true"
           className="img"

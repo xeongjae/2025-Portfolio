@@ -2,80 +2,90 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid rgba(75, 85, 99, 0.6);
+  border-bottom: 1px solid rgba(75, 85, 99, 0.3);
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+
+  &.hidden {
+    transform: translateY(-100%);
+  }
+
+  &.visible {
+    transform: translateY(0);
+  }
+
+  &.light-mode {
+    background-color: rgba(0, 0, 0, 0.05);
+    .item-text {
+      color: #555;
+    }
+  }
 }
 
 .mainHeader {
   padding: 0 40px;
   max-width: 1300px;
   width: 100%;
-  height: 52px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Montserrat", sans-serif;
- 
 
   .logo {
     display: flex;
-    align-items: center;
-    gap: 12px;
-    width: 20%;
-    cursor: pointer;
   }
 
   .logo-text {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .menu {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    
+    width: 40%;
   }
 
   .item {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     width: 100%;
     cursor: default;
   }
 
   .item-text {
-    color: #afb8c6;
-    transition: color 0.3s;
+    color: #afb8c6; /* 기본 색상 */
+    transition: color 0.2s;
+  }
+
+  .item1 {
     &:hover {
       cursor: pointer;
-    }
-    &.active {
-      color: white;
-      font-size: 17px;
+      color: #ff408084;
+      font-weight: 700;
     }
   }
-}
-
-@media (min-width: 768px) {
-  .mainHeader {
-    padding: 0 40px;
+  .item2 {
+    &:hover {
+      cursor: pointer;
+      color: #3578e5b3;
+      font-weight: 700;
+    }
   }
-}
-
-@media (min-width: 1024px) {
-  .mainHeader {
-    padding: 0 60px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .mainHeader {
-    padding: 0 100px;
+  .item3 {
+    &:hover {
+      cursor: pointer;
+      color: #ff9900ab;
+      font-weight: 700;
+    }
   }
 }

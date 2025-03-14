@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 
 import { BrowserRouter } from 'react-router-dom'
 import { createRoot } from 'react-dom/client'

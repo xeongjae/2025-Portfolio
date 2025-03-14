@@ -1,200 +1,187 @@
-.start {
+.start-container {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 120px;
   width: 100%;
+  max-width: 1300px;
   height: 100vh;
-  margin-bottom: 10vh;
+  margin: 0 40px 0px 40px;
+  padding-top: 60px;
+}
 
-  .title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 40px;
+.start-container.light-mode {
+  .frontend-text,
+  .code-text,
+  .react-text,
+  .typescript-text {
+    opacity: 0.9;
+  }
+  .tag {
+    border: 1px solid #333;
+  }
+  .portfolio-title {
+    color: #333;
+  }
+}
 
-    h1 {
-      font-family: "Syncopate", sans-serif;
-      font-size: 50px;
-      font-weight: 500;
-      color: #3b3b42;
-    }
+.frontend-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  color: #3578e5b3;
+  position: absolute;
+  top: 22%;
+  left: 0;
+  opacity: 0.5;
+  text-shadow: 3px 3px 10px hsla(217, 77%, 55%, 0.4);
+  animation: bounce 3.2s infinite alternate;
+  pointer-events: none;
+  user-select: none;
+  filter: blur(5px);
+}
 
-    .letter-space {
-      letter-spacing: 13px;
-    }
+.code-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 84px;
+  font-weight: bold;
+  color: #ff9900ab;
+  position: absolute;
+  rotate: 30deg;
+  top: 14%;
+  right: 21%;
+  opacity: 0.5;
+  text-shadow: 3px 3px 10px rgba(255, 153, 0, 0.4);
+  animation: bounce 2s infinite alternate;
+  pointer-events: none;
+  user-select: none;
+  filter: blur(4px);
+}
 
-    .point {
-      font-size: 30px;
-      font-weight: 900;
-      background: linear-gradient(to bottom, white,#FCF2FB, #BBC8F2, black);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+.react-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: rgb(110, 110, 110);
+  position: absolute;
+  top: 40%;
+  right: 5px;
+  opacity: 0.5;
+  text-shadow: 3px 3px 10px rgb(248, 250, 252, 0.4);
+  animation: bounce 3s infinite alternate;
+  pointer-events: none;
+  user-select: none;
+  filter: blur(6px);
+}
+
+.typescript-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #ff408084;
+  position: absolute;
+  rotate: -10deg;
+  bottom: 11%;
+  left: 50%;
+  opacity: 0.5;
+  text-shadow: 3px 3px 10px rgba(255, 64, 128, 0.4);
+  animation: bounce 2.5s infinite alternate;
+  pointer-events: none;
+  user-select: none;
+  filter: blur(7px);
+}
+
+.text-container {
+  .portfolio-title {
+    font-size: 14px;
+    color: gray;
+  }
+
+  .main-heading {
+    font-family: "NanumSquareNeoExtraBold";
+    font-size: 80px;
+    font-weight: 800;
+  }
+
+  .lg-hidden {
+    display: none;
+
+    @media (max-width: 1024px) {
+      display: block;
     }
   }
-  .cloud {
-    position: absolute;
-    width: 80px;
-    pointer-events: none;
-    user-select: none;
 
-    &.cloud1 {
-      left: 1.8vw;
-      top: 24%;
-      scale: 2;
-    }
+  .lg-inline {
+    display: inline;
 
-    &.cloud2 {
-      left: 10vw;
-      top: 48%;
-      scale: 3.2;
+    @media (max-width: 1024px) {
+      display: none;
     }
+  }
+}
 
-    &.cloud3 {
-      left: 2vw;
-      bottom: 22vh;
-      scale: 1.3;
-    }
+.typed-container {
+  height: 124px;
+}
 
-    &.cloud4 {
-      left: 15vw;
-      bottom: 12vh;
-      scale: 2.1;
-    }
+.typed-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  ~ .typed-cursor {
+    font-size: 76px;
+  }
+}
 
-    &.cloud5 {
-      left: 25vw;
-      bottom: 25vh;
-      scale: 1;
-      filter: blur(2px);
-    }
+.tag-container {
+  display: flex;
+  gap: 10px;
+}
 
-    &.cloud6 {
-      right: 33vw;
-      bottom: 11.5vh;
-      scale: 1.9;
-      rotate: 5deg;
-    }
-
-    &.cloud7 {
-      left: 39vw;
-      bottom: 6.5vh;
-      scale: 3;
-    }
-
-    &.cloud8 {
-      right: 12vw;
-      bottom: 22vh;
-      scale: 2.8;
-    }
-
-    &.cloud9 {
-      right: 24vw;
-      bottom: 28vh;
-      scale: 1;
-      filter: blur(2px);
-    }
-
-    &.cloud10 {
-      right: 1.5vw;
-      bottom: 42vh;
-      scale: 1.3;
-    }
-
-    &.cloud11 {
-      right: 15vw;
-      top: 40vh;
-      scale: 1.7;
-      rotate: -3deg;
-    }
-
-    &.cloud12 {
-      right: 11vw;
-      top: 18vh;
-      scale: 2.9;
-    }
+.tag {
+  font-size: 14px;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+}
+.tag1 {
+  &:hover {
+    cursor: pointer;
+    background-color: #ff408084;
+    border: 1px solid #ff408084;
+  }
+}
+.tag2 {
+  &:hover {
+    cursor: pointer;
+    background-color: #3578e5b3;
+    border: 1px solid #3578e5b3;
+  }
+}
+.tag3 {
+  &:hover {
+    cursor: pointer;
+    background-color: #ff9900ab;
+    border: 1px solid #ff9900ab;
   }
 }
 
 @media (min-width: 768px) {
-  .start {
-    .title {
-      h1 {
-        font-size: 80px;
-      }
-      .point {
-        font-size: 40px;
-      }
-    }
-    .cloud {
-      width: 80px;
-    }
-  }
 }
 
 @media (min-width: 1024px) {
-  .start {
-    .title {
-      h1 {
-        font-size: 90px;
-      }
-      .point {
-        font-size: 46px;
-      }
-    }
-    .cloud {
-      width: 92px;
-    }
-  }
 }
 
 @media (min-width: 1280px) {
-  .start {
-    .title {
-      h1 {
-        font-size: 96px;
-      }
-      .point {
-        font-size: 48px;
-      }
-    }
-    .cloud {
-      width: 112px;
-    }
-  }
 }
 
-@media (min-width: 1440px) {
-  .start {
-    .title {
-      h1 {
-        font-size: 104px;
-      }
-      .point {
-        font-size: 52px;
-      }
-    }
-    .cloud {
-      width: 124px;
-    }
+@keyframes bounce {
+  from {
+    transform: translateY(0);
   }
-}
-
-@media (min-width: 2240px) {
-  .start {
-    .title {
-      h1 {
-        font-size: 160px;
-      }
-      .point {
-        font-size: 80px;
-      }
-    }
-    .cloud {
-      width: 200px;
-    }
+  to {
+    transform: translateY(-20px);
   }
 }

@@ -1,0 +1,42 @@
+/* 색상 변수 */
+$light-bg: #ddd;
+$light-text: #121212;
+
+$dark-bg: #121212;
+$dark-text: #f8fafc;
+
+/* 기본적으로 다크모드 설정 */
+body {
+  background-color: $dark-bg;
+  color: $dark-text;
+  margin: 0;
+  font-family: "NanumSquareNeo";
+}
+
+/* 라이트모드가 적용될 때 스타일 */
+body.light-mode {
+  background-color: $light-bg;
+  color: $light-text;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+  color: inherit; // 부모 요소의 색상을 따라감
+  cursor: inherit;
+}
+
+/* 기본 마진 설정 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}

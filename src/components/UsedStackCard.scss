@@ -1,18 +1,25 @@
+.used-stack-card.light-mode {
+  background-color: #b0b0b09d;
+  .text {
+    color: #111;
+  }
+}
+
 .used-stack-card {
+  display: flex;
+  justify-content: flex-start;
   border-radius: 10px;
-  padding: 24px 20px;
+  padding: 2rem;
   background-color: #2525259d;
 
   .icon {
-    border: 1px solid #4a5568;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #121212;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    align-items: center;
-    justify-content: center;
   }
 
   .title-box {
@@ -32,9 +39,10 @@
 
   .text {
     margin-left: 0px;
-    line-height: 1.7;
+    line-height: 1.8;
+    color: rgb(208, 212, 219);
     div {
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
   }
 }

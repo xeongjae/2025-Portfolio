@@ -1,5 +1,18 @@
+.light-mode .project-card {
+  .img-box {
+    border: 1px solid #555;
+  }
+  .info .subtitle {
+    color: #333;
+  }
+  .tag-container .tag {
+    color: #121212;
+    border: 1px solid #333;
+  }
+}
+
 .project-card {
-  margin-bottom: 24px;
+  margin-bottom: 50px;
   &:hover {
     cursor: pointer;
   }
@@ -8,13 +21,12 @@
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 20px;
-    border: 1px solid #4a5568;
-    aspect-ratio: 7 / 4;
+    border: 1px solid #9ca3af50;
+    aspect-ratio: 8 / 5;
     transition: all 0.3s ease-out;
-    filter: brightness(0.95);
+    filter: brightness(0.9);
     &:hover {
-      transform: translateY(-5px);
-      filter: brightness(1.05);
+      transform: translateY(-10px);
     }
   }
 

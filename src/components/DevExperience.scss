@@ -1,0 +1,122 @@
+.career-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+
+  .career-content {
+    display: flex;
+    flex-direction: column;
+
+    .section-title {
+      font-weight: 600;
+      font-size: 32px;
+      margin-bottom: 60px;
+    }
+
+    .career-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-left: 40px;
+
+      .career-item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        @media (min-width: 768px) {
+          flex-direction: row;
+          gap: 40px;
+        }
+
+        .career-info {
+          width: 100%;
+          max-width: 30%;
+          margin-bottom: 20px;
+
+          .job-title {
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 10px;
+          }
+
+          .company-position {
+            font-weight: 600;
+            margin-bottom: 5px;
+          }
+
+          .date {
+            font-size: 14px;
+            color: gray;
+          }
+        }
+
+        .career-details {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .company-name {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+
+          .link-button {
+            font-size: 14px;
+            padding: 5px 10px;
+            border: 1px solid gray;
+            border-radius: 20px;
+            font-family: "Montserrat", sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: #f8fafc;
+            transition: background-color 0.1s ease, color 0.1s ease;
+            white-space: nowrap;
+
+            &.light-mode {
+              border: 1px solid #333;
+              background-color: #ddd;
+              color: #121212;
+            }
+
+            &:hover {
+              background-color: #ddd;
+              color: #121212;
+              cursor: pointer;
+            }
+
+            &.light-mode:hover {
+              background-color: #121212;
+              color: #f8fafc;
+            }
+          }
+
+          .description {
+            font-family: "NanumSquareNeo";
+            font-size: 16px;
+            line-height: 1.3;
+            color: rgb(208, 212, 219); // Default dark mode color
+            p {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              padding-bottom: 12px;
+            }
+            .spot {
+              font-size: 20px;
+            }
+
+            // Light mode styles
+            &.light-mode {
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+}

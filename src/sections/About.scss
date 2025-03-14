@@ -1,0 +1,69 @@
+.used-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: calc(100% - 80px);
+  max-width: 1300px;
+  padding: 60px 40px 140px 40px;
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    h3 {
+      font-family: "NanumSquareNeoExtraBold";
+      font-size: 40px;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    p {
+      font-family: "NanumSquareNeo";
+      font-size: 18px;
+      line-height: 1.4;
+      color: #9ca3af;
+    }
+  }
+  .used-stack-cards {
+    display: grid;
+    gap: 1.25rem;
+    width: 100%;
+    aspect-ratio: 7 / 4;
+    margin-top: 50px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  /* 라이트모드일 때 */
+  &.light-mode .text p {
+    color: #333;
+  }
+}
+
+@media (min-width: 768px) {
+  .used-stack {
+    .used-stack-cards {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .used-stack {
+    .used-stack-cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .used-stack {
+    .used-stack-cards {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}
