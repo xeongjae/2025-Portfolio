@@ -10,7 +10,7 @@
 
 ## 🔗 배포 링크
 
-[포트폴리오 웹사이트 바로가기]([https://seongjae-portfolio.netlify.app/])
+[포트폴리오 웹사이트 바로가기](https://seongjae-portfolio.netlify.app/)
 
 ## 🛠️ 기술 스택
 
