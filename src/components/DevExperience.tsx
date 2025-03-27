@@ -5,7 +5,7 @@ import { SiGithub } from "react-icons/si";
 import useThemeStore from "../hooks/useThemeStore";
 
 const DevExperience: React.FC = () => {
-  const { isLightMode } = useThemeStore();
+  const { colorMode } = useThemeStore();
 
   return (
     <div className="career-container">
@@ -25,12 +25,12 @@ const DevExperience: React.FC = () => {
                   href="https://github.com/xeongjae/react-docs-study"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`link-button ${isLightMode ? "light-mode" : ""}`}
+                  className={`link-button ${colorMode ? "light-mode" : ""}`}
                 >
                   Github <SiGithub />
                 </a>
               </div>
-              <div className={`description ${isLightMode ? "light-mode" : ""}`}>
+              <div className={`description ${colorMode ? "light-mode" : ""}`}>
                 <p>
                   <span className="spot">•</span> 공식 문서를 통해 리액트를
                   학습하고, 토론과 공식 문서 예제 풀이
@@ -65,12 +65,12 @@ const DevExperience: React.FC = () => {
                   href="https://github.com/xeongjae/javascript-deep-dive-study"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`link-button ${isLightMode ? "light-mode" : ""}`}
+                  className={`link-button ${colorMode ? "light-mode" : ""}`}
                 >
                   Github <SiGithub />
                 </a>
               </div>
-              <div className={`description ${isLightMode ? "light-mode" : ""}`}>
+              <div className={`description ${colorMode ? "light-mode" : ""}`}>
                 <p>
                   <span className="spot">•</span>JS 기반 프로젝트 경험이 있는
                   사람들과 함께 '모던 자바스크립트 Deep Dive' 정독
@@ -99,7 +99,7 @@ const DevExperience: React.FC = () => {
             </div>
             <div className="career-details">
               <div className="company-name">엘리스 SW엔지니어 6기</div>
-              <div className={`description ${isLightMode ? "light-mode" : ""}`}>
+              <div className={`description ${colorMode ? "light-mode" : ""}`}>
                 <p>
                   <span className="spot">•</span> JavaScript, React 등 학습
                 </p>

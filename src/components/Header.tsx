@@ -14,7 +14,7 @@ const Header: React.FC = () => {
   const { id } = useParams();
 
   // Zustand Store 다크모드 상태 테마 토글 함수
-  const { isLightMode, toggleTheme } = useThemeStore();
+  const { colorMode, toggleTheme } = useThemeStore();
 
   // 메뉴 클릭 시 해당 섹션으로 스크롤
   const handleMenuClick = (index: number) => {
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
   return (
     <header
       className={`mainHeader-container ${visible ? "visible" : "hidden"} ${
-        isLightMode ? "light-mode" : ""
+        colorMode ? "light-mode" : ""
       }`}
     >
       <div className="mainHeader">
@@ -60,7 +60,7 @@ const Header: React.FC = () => {
           </div>
         </div>
         {!id && renderMenu()} {/* 메인페이지에서만 메뉴 렌더링 */}
-        <ToggleSwitch onClick={handleToggleSwitch} checked={isLightMode} />
+        <ToggleSwitch onClick={handleToggleSwitch} checked={colorMode} />
       </div>
     </header>
   );

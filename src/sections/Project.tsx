@@ -8,7 +8,7 @@ import ProjectCard from "../components/project/ProjectCard";
 import { ListChart } from "../library/ProjectCardData";
 
 const Project: React.FC = () => {
-  const { isLightMode } = useThemeStore();
+  const { colorMode } = useThemeStore();
 
   const navigate = useNavigate();
 
@@ -18,7 +18,7 @@ const Project: React.FC = () => {
   };
 
   return (
-    <section className={`project ${isLightMode ? "light-mode" : "dark-mode"}`}>
+    <section className={`project ${colorMode ? "light-mode" : "dark-mode"}`}>
       <h2>Web Project</h2>
       <div className="contents">
         <h3>

@@ -6,18 +6,18 @@ import ProjectDetail from "./pages/ProjectDetail";
 import useThemeStore from "./hooks/useThemeStore";
 
 const App: React.FC = () => {
-  const { isLightMode } = useThemeStore();
+  const { colorMode } = useThemeStore();
 
   // body 클래스 동적 변경
   useEffect(() => {
-    if (isLightMode) {
+    if (colorMode) {
       document.body.classList.add("light-mode");
       document.body.classList.remove("dark-mode");
     } else {
       document.body.classList.add("dark-mode");
       document.body.classList.remove("light-mode");
     }
-  }, [isLightMode]);
+  }, [colorMode]);
 
   return (
     <Routes>

@@ -7,12 +7,10 @@ import { StackData } from "../library/UsedStackData";
 import DevExperience from "../components/DevExperience";
 
 const About: React.FC = () => {
-  const { isLightMode } = useThemeStore();
+  const { colorMode } = useThemeStore();
 
   return (
-    <section
-      className={`used-stack ${isLightMode ? "light-mode" : "dark-mode"}`}
-    >
+    <section className={`used-stack ${colorMode ? "light-mode" : "dark-mode"}`}>
       <div className="contents">
         <div className="text">
           <h3>

@@ -9,10 +9,10 @@ type Props = {
 };
 
 const UsedStackCard: React.FC<Props> = ({ children, title, icon }) => {
-  const { isLightMode } = useThemeStore();
+  const { colorMode } = useThemeStore();
 
   return (
-    <div className={`used-stack-card ${isLightMode ? "light-mode" : "dark-mode"}`}>
+    <div className={`used-stack-card ${colorMode ? "light-mode" : "dark-mode"}`}>
       <div>
         <div className="title-box">
           <div className="icon">{icon}</div>

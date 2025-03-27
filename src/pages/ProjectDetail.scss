@@ -18,9 +18,17 @@
     background-color: #121212;
     color: #f8fafc;
   }
+  .img-box {
+    border: 1px solid #555;
+  }
   .stack {
     color: #121212;
     border: 1px solid #333;
+  }
+  .project-explain-contents {
+    p {
+      color: #333;
+    }
   }
   .detail-bot {
     .card {
@@ -52,7 +60,7 @@
     max-width: 1300px;
     height: 100%;
     padding: 110px 20px 60px 20px;
-    border-bottom: 1px solid rgb(30, 41, 59);
+    border-bottom: 1px solid rgb(156, 163, 175, 0.3);
   }
   .info-box {
     display: flex;
@@ -67,9 +75,9 @@
   }
   .feature {
     padding: 5px 10px;
-    color: #e5e7eb;
+    color: rgb(208, 212, 219);
     font-size: 12px;
-    border: 1px solid rgb(156 163 175);
+    border: 1px solid #9ca3af;
     border-radius: 20px;
   }
   .sub-title {
@@ -85,19 +93,21 @@
   .period {
     font-size: 16px;
     margin-bottom: 0.5rem;
+    color: rgb(208, 212, 219);
   }
   .detail-description {
     font-size: 16px;
-    color: #9ca3af;
+    color: rgb(208, 212, 219);
     line-height: 1.6;
   }
   .link-button-box {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
+    padding-bottom: 15px;
   }
   .link-button {
     font-size: 16px;
-    padding: 20px 30px;
-    border: 1px solid gray;
+    padding: 15px 20px;
+    border: 1px solid #4a5568;
     border-radius: 9999px;
     font-family: "Montserrat", sans-serif;
     background-color: rgb(18, 18, 18);
@@ -114,27 +124,30 @@
     width: 600px;
     overflow: hidden;
     border-radius: 20px;
-    aspect-ratio: 6 / 4;
+    aspect-ratio: 8 / 5;
+    border: 1px solid #9ca3af50;
   }
   .img {
     width: 100%;
+    min-height: 343px;
     object-fit: cover;
   }
   .detail-mid {
     box-sizing: border-box;
     display: flex;
+    gap: 1rem;
     width: 100%;
     max-width: 1300px;
     padding: 40px 20px 60px 20px;
   }
   h2 {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
   }
   .project-introduce-box {
     width: 50%;
   }
   .project-introduce-contents {
-    margin-left: 40px;
+    margin-left: 20px;
     div {
       font-family: "NanumSquareNeoBold";
       padding: 0 0 20px 0;
@@ -156,20 +169,21 @@
     padding: 5px 10px;
     color: #e5e7eb;
     font-size: 12px;
-    border: 1px solid rgb(156 163 175);
+    border: 1px solid #9ca3af;
     border-radius: 20px;
     font-family: "NanumSquareNeo";
   }
   .description {
     margin-top: 1rem;
-    margin-left: 20px;
+    margin-left: 28px;
+    margin-right: 3rem;
     line-height: 1.6;
   }
   .project-explain-box {
     width: 50%;
   }
   .project-explain-contents {
-    margin-left: 40px;
+    margin-left: 20px;
     div {
       margin-bottom: 44px;
     }
@@ -179,7 +193,8 @@
     p {
       font-size: 14px;
       margin-bottom: 16px;
-      margin-left: 20px;
+      margin-left: 26px;
+      color: rgb(208, 212, 219);
     }
   }
   .detail-bot {

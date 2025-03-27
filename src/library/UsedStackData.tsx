@@ -78,6 +78,6 @@ export const StackData = [
   {
     title: "Netlify",
     icon: <SiNetlify size={30} color="#00C7B7" />,
-    descriptions: ["React 프로젝트를 배포해 본 경험이 있습니다."],
+    descriptions: ["개인 프로젝트를 배포해 본 경험이 있습니다."],
   },
 ];

@@ -9,7 +9,7 @@ import useThemeStore from "../hooks/useThemeStore";
 import { SiGithub } from "react-icons/si";
 
 const ProjectDetail: React.FC = () => {
-  const { isLightMode } = useThemeStore();
+  const { colorMode } = useThemeStore();
 
   const { id } = useParams(); // URL에서 ID 가져오기
   const project = ProjectDetailData.find(
@@ -21,9 +21,7 @@ const ProjectDetail: React.FC = () => {
   }
 
   return (
-    <div
-      className={`project-detail ${isLightMode ? "light-mode" : "dark-mode"}`}
-    >
+    <div className={`project-detail ${colorMode ? "light-mode" : "dark-mode"}`}>
       <Header />
       <div className="detail-top">
         <div className="info-box">
@@ -35,7 +33,7 @@ const ProjectDetail: React.FC = () => {
           <p className="sub-title">{project.SubTitle}</p>
           <p className="title">{project.Title}</p>
           <p className="period">{project.Period}</p>
-          <p className="detail-description">{project.Description}</p>
+          <p className="detail-description">{project.About}</p>
           <div className="link-button-box">
             <a
               href={project.URL}
@@ -74,9 +72,9 @@ const ProjectDetail: React.FC = () => {
           </div>
         </div>
         <div className="project-explain-box">
-          <h2>🤔 어떠한 기능이 있나요?</h2>
+          <h2>🤔 어떤 기능을 담당했나요?</h2>
           <div className="project-explain-contents">
-            {project.explain.map((items, index) => (
+            {project.Explain.map((items, index) => (
               <div key={index}>
                 <h4>
                   <span className="spot">•</span> {items.description}
@@ -89,28 +87,30 @@ const ProjectDetail: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="detail-bot">
-        <h2>💥 문제는 없었나요?</h2>
-        <div className="grid-container">
-          {project.Problem.map((items, index) => (
-            <div key={index} className="card">
-              <h3>{items.title}</h3>
-              <div className="problem">
-                <h4 className="problem-title">⛔ 문제발생</h4>
-                {items.contents[0]}
+      {project.Problem && (
+        <div className="detail-bot">
+          <h2>💥 문제는 없었나요?</h2>
+          <div className="grid-container">
+            {project.Problem.map((items, index) => (
+              <div key={index} className="card">
+                <h3>{items.title}</h3>
+                <div className="problem">
+                  <h4 className="problem-title">⛔ 문제발생</h4>
+                  {items.contents[0]}
+                </div>
+                <div className="solution">
+                  <h4 className="solution-title">🙆🏻‍♂️ 해결방법</h4>
+                  {items.contents[1]}
+                </div>
+                <div className="learned">
+                  <h4 className="learned-title">😎 알게된 점</h4>
+                  {items.contents[2]}
+                </div>
               </div>
-              <div className="solution">
-                <h4 className="solution-title">🙆🏻‍♂️ 해결방법</h4>
-                {items.contents[1]}
-              </div>
-              <div className="learned">
-                <h4 className="learned-title">😎 알게된 점</h4>
-                {items.contents[2]}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

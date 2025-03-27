@@ -7,7 +7,7 @@ import useMoveScroll from "../hooks/useMoveScroll";
 import useThemeStore from "../hooks/useThemeStore";
 
 const Start: React.FC = () => {
-  const { isLightMode } = useThemeStore();
+  const { colorMode } = useThemeStore();
   const el = useRef<HTMLSpanElement>(null);
   const scrollToSection = useMoveScroll();
 
@@ -29,7 +29,7 @@ const Start: React.FC = () => {
 
   return (
     <section
-      className={`start-container ${isLightMode ? "light-mode" : "dark-mode"}`}
+      className={`start-container ${colorMode ? "light-mode" : "dark-mode"}`}
     >
       <div className="frontend-text">FrontEnd</div>
       <div className="code-text">{"</>"}</div>

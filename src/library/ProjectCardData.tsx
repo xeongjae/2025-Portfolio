@@ -1,7 +1,7 @@
 import teenyBox from "../assets/images/project/teeny-main.webp";
 import michi from "../assets/images/project/michi-main.webp";
 import portfolio from "../assets/images/project/portfolio-main.webp";
-import secondPortfoilo from "../assets/images/project/second-portfoilo-main.png"
+import secondPortfoilo from "../assets/images/project/second-portfoilo-main.png";
 import laf from "../assets/images/project/lostandfound-main.webp";
 import casaVerde from "../assets/images/project/casa-main.webp";
 
@@ -12,7 +12,6 @@ export const ListChart = [
     Type: "개인",
     Title: "[TeenyBox] 연극 정보 공유 웹사이트",
     SubTitle: "연극 정보 공유 사이트",
-    Period: "24.01.01 - 24.07.26",
     Description: (
       <>
         연극을 찾고 홍보할 수 있는 연극 정보 사이트입니다. <br />
@@ -26,7 +25,7 @@ export const ListChart = [
       </>
     ),
     ImageSrc: teenyBox,
-    Tag: ["React", "SCSS", "MUI", "Context API", "반응형"],
+    Tag: ["React", "SCSS", "MUI", "Context API"],
     Feature: ["팀 프로젝트", "장기", "반응형"],
     logo: "/Logo-Teenybox.png",
     path: "/project-detail/1",
@@ -37,7 +36,6 @@ export const ListChart = [
     Type: "개인",
     Title: "[Michi] 랜덤 채팅 앱",
     SubTitle: "",
-    Period: "2024년 4월 24일 ~ 2024년 8월 20일",
     Description: (
       <>
         랜덤 또는 선택하여 채팅할 수 있는 서비스입니다. <br />
@@ -45,7 +43,7 @@ export const ListChart = [
       </>
     ),
     ImageSrc: michi,
-    Tag: ["Xcode", "React Native", "Recoil", "TypeScript", "WebSocket"],
+    Tag: ["React Native", "TypeScript", "Recoil", "WebSocket", "Xcode"],
     Feature: ["팀 프로젝트", "모바일", "사이드"],
     logo: "/Logo-Michi.png",
     path: "/project-detail/2",
@@ -56,7 +54,6 @@ export const ListChart = [
     Type: "개인",
     Title: `[Portfolio] 2025 리뉴얼 포트폴리오`,
     SubTitle: "",
-    Period: "2025년 10월 20일 ~ 2025년 11월 5일",
     Description: (
       <>
         새롭고 세련된 디자인으로 리뉴얼한 포트폴리오입니다. <br />
@@ -64,7 +61,7 @@ export const ListChart = [
       </>
     ),
     ImageSrc: secondPortfoilo,
-    Tag: ["React", "SCSS", "GSAP", "반응형", "Netlify"],
+    Tag: ["React", "TypeScript", "Zustand", "SCSS", "Netlify"],
     Feature: ["개인 프로젝트", "배포", "반응형"],
     logo: "/cloud_2.webp",
     path: "/project-detail/3",
@@ -75,7 +72,6 @@ export const ListChart = [
     Type: "부캠",
     Title: `[Portfolio] 2024 포트폴리오 사이트`,
     SubTitle: "",
-    Period: "2024년 10월 20일 ~ 2024년 11월 5일",
     Description: (
       <>
         디자인, 기능, 배포까지 직접 작업한 포트폴리오입니다 <br />
@@ -83,7 +79,7 @@ export const ListChart = [
       </>
     ),
     ImageSrc: portfolio,
-    Tag: ["React", "SCSS", "GSAP", "반응형", "Netlify"],
+    Tag: ["React", "SCSS", "GSAP", "Netlify"],
     Feature: ["개인 프로젝트", "배포", "반응형"],
     logo: "/cloud_2.webp",
     path: "/project-detail/4",
@@ -94,7 +90,6 @@ export const ListChart = [
     Type: "부캠",
     Title: "[LAF] 분실물 검색 및 회수 서비스",
     SubTitle: "",
-    Period: "2023년 11월 13일 ~ 2023년 12월 02일",
     Description: (
       <>
         분실물을 공유하고 주인과 매칭을 도와주는 서비스입니다.
@@ -113,7 +108,6 @@ export const ListChart = [
     Type: "부캠",
     Title: "[Casa Verde] 반려 식물 및 도구 쇼핑몰",
     SubTitle: "",
-    Period: "2023년 9월 25일 ~ 2023년 10월 13일",
     Description: (
       <>
         반려 식물 및 가드닝 도구를 판매하는 쇼핑몰 서비스입니다. <br />{" "}

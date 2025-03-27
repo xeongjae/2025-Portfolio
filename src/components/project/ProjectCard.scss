@@ -52,7 +52,7 @@
   }
 
   .tag-container {
-    padding: 8px 0;
+    padding: 6px 0;
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
@@ -62,9 +62,9 @@
 
   .tag {
     font-family: "Montserrat", sans-serif;
-    padding: 5px 12px;
+    padding: 4px 8px;
     border-radius: 9999px;
-    border: 1px solid #4a5568;
+    border: 1px solid #9ca3af;
     color: #d1d5db;
   }
 }

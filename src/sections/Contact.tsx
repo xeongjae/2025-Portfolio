@@ -7,10 +7,10 @@ import { MdEmail } from "react-icons/md";
 import { SiGithub } from "react-icons/si";
 
 const Contact: React.FC = () => {
-  const { isLightMode } = useThemeStore();
+  const { colorMode } = useThemeStore();
 
   return (
-    <section className={`contact ${isLightMode ? "light-mode" : "dark-mode"}`}>
+    <section className={`contact ${colorMode ? "light-mode" : "dark-mode"}`}>
       <div className="frontend-text">FrontEnd</div>
       <div className="code-text">{"</>"}</div>
       <div className="react-text">React</div>
