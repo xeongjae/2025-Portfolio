@@ -1,3 +1,4 @@
+import React from "react";
 import "./Project.scss";
 
 import useThemeStore from "../hooks/useThemeStore";
@@ -12,7 +13,7 @@ const Project: React.FC = () => {
 
   const navigate = useNavigate();
 
-  const navTo = (id) => {
+  const navTo = (id: number): void => {
     navigate(`/project-detail/${id}`);
     window.scrollTo(0, 0);
   };
