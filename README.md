@@ -3,6 +3,7 @@
 
 [포트폴리오 웹사이트 바로가기](https://seongjae-portfolio.netlify.app/)
 <br>
+<br>
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
@@ -10,13 +11,6 @@
 ![Zustand](https://img.shields.io/badge/Zustand-000000?style=flat-square)
 > 새롭고 세련된 디자인으로 리뉴얼한 포트폴리오 웹사이트입니다.  
 > 컴포넌트 재사용성과 사용자 인터페이스를 개선했습니다.
-
-<br>
-<br>
-
-## 🔗 배포 링크
-
-[포트폴리오 웹사이트 바로가기](https://seongjae-portfolio.netlify.app/)
 
 <br>
 <br>
