@@ -1,3 +1,4 @@
+import React, { ReactNode } from "react";
 import teenyBox from "../assets/images/project/teeny-main.webp";
 import michi from "../assets/images/project/michi-main.webp";
 import portfolio from "../assets/images/project/portfolio-main.webp";
@@ -5,7 +6,35 @@ import secondPortfoilo from "../assets/images/project/second-portfoilo-main.png"
 import laf from "../assets/images/project/lostandfound-main.webp";
 import casaVerde from "../assets/images/project/casa-main.webp";
 
-export const ProjectDetailData = [
+interface ExplainItem {
+  description: string;
+  details: string[];
+}
+
+interface ProblemItem {
+  title: string;
+  contents: string[];
+}
+
+interface ProjectDetailItem {
+  Number: number;
+  Feature: string[];
+  SubTitle: string;
+  Title: string;
+  Period: string;
+  About: ReactNode;
+  URL: string;
+  ImageSrc: string;
+  Type: string;
+  Member: string;
+  Stack: string[];
+  Description: ReactNode;
+  Explain: ExplainItem[];
+  Problem?: ProblemItem[];
+  path: string;
+}
+
+export const ProjectDetailData: ProjectDetailItem[] = [
   {
     Number: 1,
     Feature: ["팀 프로젝트", "웹 프론트엔드", "장기 프로젝트", "반응형"],
@@ -212,7 +241,7 @@ export const ProjectDetailData = [
       {
         title: "초기 렌더링 시 화면 깜빡임(Flickering) 현상 발생",
         contents: [
-          "전역변수(Zustand)를 활용한 다크모드/라이트모드 전환 기능 구현 중, 초기 렌더링 시 화면 깜빡임(Flickering) 현상이 발생하는 문제를 발견했습니다.",
+          "전역변수(Zustand)를 활용한 다크모드/라이트모드 전환 기능 구현 중, 초기 렌더링 시 화면 깜빡임(Flickering) 현상이 발견했습니다.",
           "LCP(First Contentful Paint) 지연이 영향을 미칠 가능성을 고려하여 최적화를 진행했하였고, Zustand의 상태 반영 시점과 스타일 적용 방식이 원인일 수 있다고 판단하여 관련 코드를 분석했지만, 여전히 깜빡임 현상이 발생하였습니다.",
           "추측과 달리, 실제 문제의 원인은 컬러 모드 변경을 위해 적용한 트랜지션이 초기 렌더링 시에도 실행되고 있었던 것이었습니다. 관련 코드를 수정하여 문제를 해결하였습니다.",
         ],

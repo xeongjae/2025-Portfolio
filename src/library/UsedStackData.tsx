@@ -1,3 +1,4 @@
+import React, { ReactNode } from "react";
 import {
   SiJavascript,
   SiReact,
@@ -10,7 +11,13 @@ import {
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
-export const StackData = [
+interface StackItem {
+  title: string;
+  icon: ReactNode;
+  descriptions: string[];
+}
+
+export const StackData: StackItem[] = [
   {
     title: "React",
     icon: <SiReact size={26} color="#61DAFB" />,

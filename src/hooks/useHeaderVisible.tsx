@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 
-const useScrollVisibility = () => {
-  const [isVisible, setIsVisible] = useState(true);
-  const lastScrollY = useRef(0);
-  const ticking = useRef(false);
+const useScrollVisibility = (): boolean => {
+  const [isVisible, setIsVisible] = useState<boolean>(true);
+  const lastScrollY = useRef<number>(0);
+  const ticking = useRef<boolean>(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = (): void => {
       if (!ticking.current) {
         requestAnimationFrame(() => {
           if (window.scrollY > lastScrollY.current) {

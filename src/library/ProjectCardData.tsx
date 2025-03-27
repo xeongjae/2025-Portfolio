@@ -1,3 +1,4 @@
+import React, { ReactNode } from "react";
 import teenyBox from "../assets/images/project/teeny-main.webp";
 import michi from "../assets/images/project/michi-main.webp";
 import portfolio from "../assets/images/project/portfolio-main.webp";
@@ -5,7 +6,22 @@ import secondPortfoilo from "../assets/images/project/second-portfoilo-main.png"
 import laf from "../assets/images/project/lostandfound-main.webp";
 import casaVerde from "../assets/images/project/casa-main.webp";
 
-export const ListChart = [
+interface ProjectData {
+  Number: number;
+  Name: string;
+  Type: "개인" | "부캠";
+  Title: string;
+  SubTitle: string;
+  Description: ReactNode;
+  DetailDescription?: ReactNode;
+  ImageSrc: string;
+  Tag: string[];
+  Feature: string[];
+  logo: string;
+  path: string;
+}
+
+export const ListChart: ProjectData[] = [
   {
     Number: 1,
     Name: "티니박스",
