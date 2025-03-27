@@ -1,4 +1,6 @@
 # 2025 Portfolio Website
+<img src="https://github.com/user-attachments/assets/db764925-94bc-4210-b2ae-f86ba4dbc278" alt="책 이미지" width="525" height="340">
+<br>
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
