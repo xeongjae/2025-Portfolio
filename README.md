@@ -1,6 +1,7 @@
 # 2025 Portfolio Website
 <img src="https://seongjae-portfolio.netlify.app/assets/second-portfoilo-main-DsnxYHrR.png" alt="책 이미지" width="400" height="250">
-[웹사이트 바로가기](https://seongjae-portfolio.netlify.app/)
+
+[포트폴리오 웹사이트 바로가기](https://seongjae-portfolio.netlify.app/)
 <br>
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
