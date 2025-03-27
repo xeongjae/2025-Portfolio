@@ -4,8 +4,7 @@
     "module": "ESNext",
     "outDir": "dist",
     "moduleDetection": "force",
-    "jsx": "react-jsx",
-    "jsxImportSource": "react",
+    "jsx": "react",
     "moduleResolution": "node"
   },
   "include": ["src"],
