@@ -25,6 +25,19 @@
 - **Build Tool:** Vite
 - **Deployment:** Netlify
 
+## 📁 프로젝트 구조
+
+```
+src/
+├── assets/      # 이미지, 폰트 등 정적 파일
+├── components/  # 재사용 가능한 컴포넌트
+├── hooks/       # 커스텀 훅
+├── library/     # 데이터 및 상수
+├── pages/       # 페이지 컴포넌트
+├── sections/    # 메인 페이지 섹션
+└── styles/      # 전역 스타일
+```
+
 ## ✨ 주요 기능
 
 ### 1. 다크모드/라이트모드
@@ -65,39 +78,7 @@
 - 불필요한 리렌더링 방지
 - 코드 스플리팅 적용
 
-## 📁 프로젝트 구조
-
-```
-src/
-├── assets/      # 이미지, 폰트 등 정적 파일
-├── components/  # 재사용 가능한 컴포넌트
-├── hooks/       # 커스텀 훅
-├── library/     # 데이터 및 상수
-├── pages/       # 페이지 컴포넌트
-├── sections/    # 메인 페이지 섹션
-└── styles/      # 전역 스타일
-```
-
-## 🚀 시작하기
-
-```bash
-# 저장소 클론
-git clone https://github.com/xeongjae/2025-Portfolio.git
-
-# 디렉토리 이동
-cd 2025-Portfolio
-
-# 의존성 설치
-npm install
-
-# 개발 서버 실행
-npm run dev
-
-# 프로덕션 빌드
-npm run build
-```
-
-## 🔧 문제 해결
+## 🔧 트러블 슈팅
 
 ### 1. 초기 렌더링 시 화면 깜빡임 현상
 
@@ -109,6 +90,3 @@ npm run build
 - 원인: 큰 용량의 PNG 이미지 사용
 - 해결: WebP 포맷 변환 및 assets 폴더 활용
 
-## 📝 라이선스
-
-이 프로젝트는 MIT 라이선스를 따릅니다.
