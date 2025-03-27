@@ -6,7 +6,15 @@
     "moduleDetection": "force",
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "moduleResolution": "node"
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "strict": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]
