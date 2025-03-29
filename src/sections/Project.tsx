@@ -18,11 +18,6 @@ const Project: React.FC = () => {
     window.scrollTo(0, 0);
   };
 
-  const getDescriptionText = (description: React.ReactNode): string => {
-    if (typeof description === "string") return description;
-    return "프로젝트 설명"; // 기본값
-  };
-
   return (
     <section className={`project ${colorMode ? "light-mode" : "dark-mode"}`}>
       <h2>Web Project</h2>
@@ -36,7 +31,7 @@ const Project: React.FC = () => {
             <ProjectCard
               key={idx}
               Title={items.Title}
-              SubTitle={getDescriptionText(items.Description)}
+              SubTitle={items.Description}
               ImageSrc={items.ImageSrc}
               Tag={items.Tag}
               onClick={() => navTo(items.Number)}
@@ -54,7 +49,7 @@ const Project: React.FC = () => {
             <ProjectCard
               key={idx}
               Title={items.Title}
-              SubTitle={getDescriptionText(items.Description)}
+              SubTitle={items.Description}
               ImageSrc={items.ImageSrc}
               Tag={items.Tag}
               onClick={() => navTo(items.Number)}
