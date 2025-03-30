@@ -145,7 +145,7 @@ export const ProjectDetailData: ProjectDetailItem[] = [
     ImageSrc: michi,
     Type: "개인 프로젝트 ( 1인 )",
     Member: "프론트엔드 3명, 백엔드 3명, 웹 디자이너 1명",
-    Stack: ["React Native", "TypeScript", "Recoil", "WebSocket", "Xcode"],
+    Stack: ["React Native", "TypeScript", "Recoil", "socket.io", "Xcode"],
     Description: (
       <>
         이전 프로젝트(LAF)에서 폴링 방식 채팅의 한계를 경험한 후, <br />

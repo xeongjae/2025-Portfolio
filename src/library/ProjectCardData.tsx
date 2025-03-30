@@ -45,7 +45,7 @@ export const ListChart: ProjectData[] = [
     Description: `랜덤 또는 선택하여 채팅할 수 있는 서비스입니다.
 티니박스 프로젝트 중 사이드 프로젝트로 진행하였습니다.`,
     ImageSrc: michi,
-    Tag: ["React Native", "TypeScript", "Recoil", "WebSocket", "Xcode"],
+    Tag: ["React Native", "TypeScript", "Recoil", "socket.io", "Xcode"],
     Feature: ["팀 프로젝트", "모바일", "사이드"],
     logo: "/Logo-Michi.png",
     path: "/project-detail/2",

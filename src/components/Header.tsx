@@ -56,7 +56,7 @@ const Header: React.FC = () => {
       <div className="mainHeader">
         <div className="logo">
           <div className="logo-text" onClick={handleLogoClick}>
-            SJ.Portfolio
+            XJ.Portfolio
           </div>
         </div>
         {!id && renderMenu()} {/* 메인페이지에서만 메뉴 렌더링 */}
