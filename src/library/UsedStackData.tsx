@@ -44,7 +44,7 @@ export const StackData = [
     ],
   },
   {
-    title: "Context API / Recoil",
+    title: "Recoil / Zustand / ContextAPI",
     icon: <SiRecoil size={30} color="#3578E5" />,
     descriptions: [
       "프로젝트 전역 상태 관리를 위해 사용한 경험이 있습니다.",
@@ -76,7 +76,7 @@ export const StackData = [
     ],
   },
   {
-    title: "Netlify",
+    title: "Netlify / Vercel",
     icon: <SiNetlify size={30} color="#00C7B7" />,
     descriptions: ["개인 프로젝트를 배포해 본 경험이 있습니다."],
   },
