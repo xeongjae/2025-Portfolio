@@ -23,8 +23,8 @@ const Project: React.FC = () => {
       <h2>Web Project</h2>
       <div className="contents">
         <h3>
-          Independent
-          <p>수료 후 프로젝트</p>
+          Personal
+          <p>개인 프로젝트</p>
         </h3>
         <div className="grid-container">
           {ListChart.filter((el) => el.Type === "개인").map((items, idx) => (
@@ -41,11 +41,11 @@ const Project: React.FC = () => {
       </div>
       <div className="contents">
         <h3>
-          Academy
-          <p>부트캠프 프로젝트</p>
+          Team
+          <p>팀 프로젝트</p>
         </h3>
         <div className="grid-container">
-          {ListChart.filter((el) => el.Type === "부캠").map((items, idx) => (
+          {ListChart.filter((el) => el.Type === "팀").map((items, idx) => (
             <ProjectCard
               key={idx}
               Title={items.Title}

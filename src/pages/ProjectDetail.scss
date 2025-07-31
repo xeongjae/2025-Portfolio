@@ -12,15 +12,6 @@
   .detail-description {
     color: #333;
   }
-  .link-button {
-    border: 1px solid #333;
-    background-color: #ddd;
-    color: #121212;
-  }
-  .link-button:hover {
-    background-color: #121212;
-    color: #f8fafc;
-  }
   .img-box {
     border: 1px solid #555;
   }
@@ -110,6 +101,7 @@
   .link-button {
     font-size: 16px;
     padding: 15px 20px;
+    margin-right: 16px;
     border: 1px solid #4a5568;
     border-radius: 9999px;
     font-family: "Montserrat", sans-serif;
