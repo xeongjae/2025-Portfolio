@@ -35,6 +35,16 @@ const ProjectDetail: React.FC = () => {
           <p className="period">{project.Period}</p>
           <p className="detail-description">{project.About}</p>
           <div className="link-button-box">
+            {project.URL2 && project.URL2.trim() !== "" && (
+              <a
+                href={project.URL2}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-button"
+              >
+                홈페이지 바로가기 〉
+              </a>
+            )}
             <a
               href={project.URL}
               target="_blank"

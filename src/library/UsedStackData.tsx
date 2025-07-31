@@ -4,6 +4,9 @@ import {
   SiTypescript,
   SiSass,
   SiRecoil,
+  SiNodedotjs,
+  SiExpress,
+  SiPuppeteer,
   SiNetlify,
   SiGithub,
   SiFigma,
@@ -60,24 +63,48 @@ export const StackData = [
     ],
   },
   {
+    title: "Node.js",
+    icon: <SiNodedotjs size={30} color="#339933" />,
+    descriptions: [
+      "비동기 프로그래밍과 이벤트 기반 구조를 이해하고있습니다.",
+      "Node.js 기본 모듈을 활용해 서버 로직을 구성해 보았습니다.",
+    ],
+  },
+  {
+    title: "Express",
+    icon: <SiExpress size={30} color="#808080" />,
+    descriptions: [
+      "Express로 REST API를 설계헤보았습니다.",
+      "배포 환경을 고려해 `.env` 파일을 사용하여 환경 변수들을 분리하고 관리했습니다.",
+    ],
+  },
+  {
+    title: "Puppeteer, Socket.io",
+    icon: <SiPuppeteer size={30} color="#01B0F6" />,
+    descriptions: [
+      "Puppeteer의 메서드들을 사용하여 웹 크롤링 자동화를 구현해 보았습니다.",
+      "실시간 채팅과 접속중 UI를 구현해 보았습니다.",
+    ],
+  },
+  {
     title: "Git",
     icon: <SiGithub size={30} color="#F05032" />,
     descriptions: [
-      "GitHub, GitLab을 사용하여 협업할 수 있습니다.",
       "컨벤션을 준수하고 코드 리뷰를 습관화합니다.",
+      "GitHub, GitLab을 사용하여 협업할 수 있습니다.",
     ],
   },
   {
-    title: "Figma",
+    title: "Figma / Notion",
     icon: <SiFigma size={30} color="#A259FF" />,
     descriptions: [
-      "와이어프레임 및 목업을 작성할 수 있습니다.",
-      "프로젝트 기획 단계부터 피드백 반영까지, 피그마를 통해 디자이너 팀원과 긴밀히 협업한 경험이 있습니다.",
+      "디자이너 팀원과 긴밀히 협업한 경험이 있고, 와이어프레임 및 목업을 작성할 수 있습니다.",
+      "프로젝트 기획 및 문서 관리를 능숙하게 할 수 있습니다.",
     ],
   },
   {
-    title: "Netlify / Vercel",
+    title: "Netlify / Vercel / Render",
     icon: <SiNetlify size={30} color="#00C7B7" />,
-    descriptions: ["개인 프로젝트를 배포해 본 경험이 있습니다."],
+    descriptions: ["개인 프로젝트들을 배포해 본 경험이 있습니다."],
   },
 ];

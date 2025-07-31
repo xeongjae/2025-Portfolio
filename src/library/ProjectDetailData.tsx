@@ -5,6 +5,7 @@ import portfolio from "../assets/images/project/portfolio-main.webp";
 import secondPortfoilo from "../assets/images/project/second-portfoilo-main.png";
 import laf from "../assets/images/project/lostandfound-main.webp";
 import casaVerde from "../assets/images/project/casa-main.webp";
+import mitgosa from "../assets/images/project/mitgosa-main.png";
 
 interface ExplainItem {
   description: string;
@@ -24,6 +25,7 @@ interface ProjectDetailItem {
   Period: string;
   About: ReactNode;
   URL: string;
+  URL2: string;
   ImageSrc: string;
   Type: string;
   Member: string;
@@ -35,6 +37,87 @@ interface ProjectDetailItem {
 }
 
 export const ProjectDetailData: ProjectDetailItem[] = [
+  {
+    Number: 0,
+    Feature: ["개인 프로젝트", "웹 사이트", "클라이언트", "서버"],
+    SubTitle: "AI 쇼핑 비서 웹사이트",
+    Title: "MITGOSA",
+    Period: "24.04.24 - 24.08.20",
+    About: (
+      <>
+        쇼핑몰 리뷰를 크롤링하고, AI로 분석해 요약해주는 서비스입니다. <br />
+        인터넷 쇼핑을 편리하게 돕고자 하는 생각에서 출발하였습니다.
+      </>
+    ),
+    URL: "https://github.com/xeongjae/mitgosa-client",
+    URL2: "https://mitgosa.vercel.app",
+    ImageSrc: mitgosa,
+    Type: "개인 프로젝트",
+    Member: "",
+    Stack: ["React", "Node.js", "Express ", "Puppeteer", "Vercel", "Render"],
+    Description: (
+      <>
+        이 프로젝트는 인터넷 쇼핑을 좀 더 빠르고 편리하게 돕고자 하는 생각에서
+        출발하였습니다. <br />
+        <br />
+        온라인 마켓을 통해 쇼핑하며, 신뢰할 수 있는 정보를 얻기 위해 수많은
+        리뷰를 하나하나 읽는 과정의 불편함을 느꼈습니다.
+        <br /> 저와 같은 사람들을 위해, 크롤링하여 얻은 리뷰 데이터를 AI가
+        요약하고 정리해줌으로써 사용자의 시간과 노력을 획기적으로 절약할 수 있을
+        것이라는 확신을 가지고 이 프로젝트를 시작하게 되었습니다. <br />
+        <br />
+        저의 필요에서 비롯된 아이디어이기에 더 큰 애정을 가지고 개발에 임했으며,
+        그 속에 기술적 도전을 하나하나 달성하며 흥미를 느낄 수 있었습니다.
+      </>
+    ),
+    Explain: [
+      {
+        description: "웹 크롤링",
+        details: [
+          "Puppeteer를 사용하여 무신사 상품 페이지에서 실시간으로 리뷰 데이터를 크롤링하는 기능 구현",
+          "상품 정보(이미지, 브랜드명, 상품명, 가격)와 함께 사용자 리뷰를 자동으로 수집하여 분석 데이터로 활용",
+        ],
+      },
+      {
+        description: "AI API 연동",
+        details: [
+          "Gemini AI API를 활용하여 크롤링한 리뷰 데이터를 지능적으로 분석하는 기능 구현",
+          "수집된 리뷰들을 종합하여 장점, 단점, 긍정/부정/중립 비율, 사이즈 평가, 전반적인 요약을 자동 생성",
+        ],
+      },
+      {
+        description: "REST API 요청",
+        details: ["Express.js 서버에서 엔드포인트를 통한 리뷰 분석 API 제공"],
+      },
+      {
+        description: "기타 기능",
+        details: [
+          "분석 결과를 시각적으로 표현하는 도넛 차트와 직관적인 UI/UX 컴포넌트 구현",
+          "공통으로 사용되는 컴포넌트들(Header, Footer, AnalysisResult, UrlInputForm 등)을 모듈화하여 재사용성 향상",
+          "반응형 디자인과 사용자 친화적인 인터페이스 구현",
+        ],
+      },
+    ],
+    Problem: [
+      {
+        title: "가상 스크롤 크롤링 문제 해결",
+        contents: [
+          "초기에 크롤링 로직으로 리뷰를 수집한 결과, 10-20개 정도 소수의 리뷰만 수집되는 문제가 발생했습니다.",
+          "무신사의 경우 순차적으로 한 번에 20-25개 정도의 리뷰만 렌더링됩니다. 이는 한 번의 크롤링으로 모든 리뷰를 수집할 수 없음을 의미했습니다. 따라서 page.waitForSelector() 와 page.evaluate() 메서드를 활용하여 단계적 스크롤 → 로딩 대기 → 데이터 수집을 반복하였습니다.",
+          "이 후, 실제 리뷰 총 개수 대비 약 95-98%의 리뷰를 성공적으로 수집할 수 있었습니다. 소량의 누락은 네트워크 지연이나 동적 로딩 타이밍 이슈로 인한 것으로 생각되었으나, 분석 속도와의 균형을 고려하여 만족할 만한 결과라고 판단했습니다.",
+        ],
+      },
+      {
+        title: "LLM 프롬프트 엔지니어링을 통한 정형 데이터(JSON) 확보",
+        contents: [
+          "Gemini API가 반환하는 비정형 데이터를 클라이언트에서 사용하기 위해 파싱(parsing) 과정이 필요했습니다.",
+          "REST API 통신 환경에서는 분석 결과 역시 JSON으로 전달되어야 했기 때문에, 별도로 파싱 로직을 구성하기보다는 프롬프트에서 직접 JSON 형식으로 응답을 생성하도록 설계했습니다.",
+          "결과적으로 개발 효율성과 응답 데이터의 일관성을 동시에 확보할 수 있는 효과적인 접근이었고, 정형화된 JSON 데이터를 안정적으로 받을 수 있었습니다.",
+        ],
+      },
+    ],
+    path: "/project-detail/0",
+  },
   {
     Number: 1,
     Feature: ["팀 프로젝트", "웹 프론트엔드", "장기 프로젝트", "반응형"],
@@ -49,6 +132,7 @@ export const ProjectDetailData: ProjectDetailItem[] = [
       </>
     ),
     URL: "https://github.com/teeny-box/teenybox-frontend",
+    URL2: "",
     ImageSrc: teenyBox,
     Type: "팀 프로젝트",
     Member: "프론트엔드 3명, 백엔드 3명, 웹 디자이너 1명",
@@ -142,8 +226,9 @@ export const ProjectDetailData: ProjectDetailItem[] = [
       </>
     ),
     URL: "https://github.com/xeongjae/2025-Portfolio",
+    URL2: "",
     ImageSrc: michi,
-    Type: "개인 프로젝트 ( 1인 )",
+    Type: "팀 프로젝트",
     Member: "프론트엔드 3명, 백엔드 3명, 웹 디자이너 1명",
     Stack: ["React Native", "TypeScript", "Recoil", "socket.io", "Xcode"],
     Description: (
@@ -200,6 +285,7 @@ export const ProjectDetailData: ProjectDetailItem[] = [
       </>
     ),
     URL: "https://github.com/xeongjae/2025-Portfolio",
+    URL2: "https://seongjae-portfolio.netlify.app",
     ImageSrc: secondPortfoilo,
     Type: "개인 프로젝트 ( 1인 )",
     Member: "",
@@ -271,6 +357,7 @@ export const ProjectDetailData: ProjectDetailItem[] = [
       </>
     ),
     URL: "https://github.com/xeongjae/Portfolio",
+    URL2: "https://xeongjae-portfolio.netlify.app",
     ImageSrc: portfolio,
     Type: "개인 프로젝트 ( 1인 )",
     Member: "",
@@ -324,6 +411,7 @@ export const ProjectDetailData: ProjectDetailItem[] = [
       </>
     ),
     URL: "https://github.com/elice-team10/Frontend",
+    URL2: "",
     ImageSrc: laf,
     Type: "팀 프로젝트",
     Member: "프론트엔드 4명, 백엔드 2명",
@@ -370,6 +458,7 @@ export const ProjectDetailData: ProjectDetailItem[] = [
       </>
     ),
     URL: "https://github.com/xeongjae/Backend",
+    URL2: "",
     ImageSrc: casaVerde,
     Type: "팀 프로젝트",
     Member: "프론트엔드 3명, 백엔드 3명",
