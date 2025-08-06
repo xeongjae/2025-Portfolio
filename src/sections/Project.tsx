@@ -20,7 +20,7 @@ const Project: React.FC = () => {
 
   return (
     <section className={`project ${colorMode ? "light-mode" : "dark-mode"}`}>
-      <h2>Web Project</h2>
+      <h2>Project</h2>
       <div className="contents">
         <h3>
           Personal
