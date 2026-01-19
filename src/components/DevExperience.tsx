@@ -14,6 +14,40 @@ const DevExperience: React.FC = () => {
         <div className="career-list">
           <div className="career-item">
             <div className="career-info">
+              <div className="job-title">인턴쉽</div>
+              <div className="company-position">(주)헤메코</div>
+              <div className="date">2025.09.27 ~ 2025.01.03</div>
+            </div>
+            <div className="career-details">
+              <div className="company-name">
+                플랫폼 개발팀 인턴
+                <a
+                  href="https://github.com/xeongjae/react-docs-study"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`link-button ${colorMode ? "light-mode" : ""}`}
+                >
+                  Github <SiGithub />
+                </a>
+              </div>
+              <div className={`description ${colorMode ? "light-mode" : ""}`}>
+                <p>
+                  <span className="spot">•</span> 유저 수 35만 명, 연 매출 약 100억 원 규모의 글로벌 뷰티 이커머스 플랫폼입니다.
+                </p>
+                <p>
+                  <span className="spot">•</span> UI/UX 개선, 성능 최적화가 실제 구매 전환율, 서버 비용 등 비즈니스 성과에 영향을 미치는 것을 체감했습니다.
+                </p>
+                <p>
+                  <span className="spot">•</span> 상품 상세페이지를 리팩토링하여 코드 품질과 성능 최적화를 이뤄냈습니다.
+                </p>
+                <p>
+                  <span className="spot">•</span> 여러 UI/UX 이슈를 개선하여 실제 사용자 환경에 반영했습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="career-item">
+            <div className="career-info">
               <div className="job-title">스터디 운영</div>
               <div className="company-position">React docs</div>
               <div className="date">2024.12.17 ~ 2025.01.14</div>

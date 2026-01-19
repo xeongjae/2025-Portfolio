@@ -5,7 +5,7 @@ import {
   SiSass,
   SiRecoil,
   SiNodedotjs,
-  SiExpress,
+  SiNextdotjs,
   SiPuppeteer,
   SiNetlify,
   SiGithub,
@@ -15,6 +15,14 @@ import { TbBrandReactNative } from "react-icons/tb";
 
 export const StackData = [
   {
+    title: "Next.js",
+  icon: <SiNextdotjs size={30} color="#FFFFFF" />,
+    descriptions: [
+      "Next.js를 사용하여 서버 사이드 렌더링을 구현했습니다.",
+      "Next.js의 라우팅 시스템을 활용하여 페이지를 관리했습니다.",
+    ],
+  },
+  {
     title: "React",
     icon: <SiReact size={26} color="#61DAFB" />,
     descriptions: [
@@ -23,19 +31,19 @@ export const StackData = [
     ],
   },
   {
-    title: "JavaScript",
-    icon: <SiJavascript size={30} color="#F7DF1E" />,
-    descriptions: [
-      "실행 컨텍스트, 스코프, 클로저, 호출 스택과 이벤트 루프의 동작 원리를 이해하여 사용합니다.",
-      "적절한 함수 분리를 통해 코드의 가독성을 높이고 유지보수성을 향상시킵니다.",
-    ],
-  },
-  {
     title: "TypeScript",
     icon: <SiTypescript size={26} color="#3178C6" />,
     descriptions: [
       "TypeScript의 타입 시스템을 활용하여 개발하는 것을 지향합니다.",
       "React + TypeScript 환경을 구축하여 프로젝트를 완성해보았습니다.",
+    ],
+  },
+  {
+    title: "JavaScript",
+    icon: <SiJavascript size={30} color="#F7DF1E" />,
+    descriptions: [
+      "실행 컨텍스트, 스코프, 클로저, 호출 스택과 이벤트 루프의 동작 원리를 이해하여 사용합니다.",
+      "적절한 함수 분리를 통해 코드의 가독성을 높이고 유지보수성을 향상시킵니다.",
     ],
   },
   {
@@ -63,19 +71,11 @@ export const StackData = [
     ],
   },
   {
-    title: "Node.js",
+    title: "Node.js, Express",
     icon: <SiNodedotjs size={30} color="#339933" />,
     descriptions: [
-      "비동기 프로그래밍과 이벤트 기반 구조를 이해하고있습니다.",
       "Node.js 기본 모듈을 활용해 서버 로직을 구성해 보았습니다.",
-    ],
-  },
-  {
-    title: "Express",
-    icon: <SiExpress size={30} color="#808080" />,
-    descriptions: [
       "Express로 REST API를 설계헤보았습니다.",
-      "배포 환경을 고려해 `.env` 파일을 사용하여 환경 변수들을 분리하고 관리했습니다.",
     ],
   },
   {
